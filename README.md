@@ -1,0 +1,2 @@
+# GitHub repository – DEO Legacy sample
+Synthetic WAR application; Java 17 + Maven. Run `mvn test package`; deploy `target/deo.war` to Tomcat 10.1. JSP fetches sample engagement 10 milestones. DAO is intentionally in-memory; SQL files document a separate Oracle-style production model. This fixture omits auth/CSRF and must not be exposed publicly. See root package README for associated SharePoint and ServiceNow exports.

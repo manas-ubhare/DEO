@@ -1,0 +1,3 @@
+# Architecture (as observed in repository)
+Browser -> JSP + jQuery -> Spring MVC MilestoneController -> MilestoneService -> MilestoneDao -> demo in-memory repository. Production reference architecture uses Oracle 19c and a scheduled overdue report; SQL examples under resources/db are NOT connected in this fixture. WAR deployment target Tomcat 10.1. No actual SSO, RBAC, CSRF, job scheduler or ServiceNow API implementation is included. Treat SharePoint's architecture page as *claimed production state*, not proof from code.
+Endpoints: GET `/`, GET `/api/engagements/{id}/milestones`, POST `/api/milestones/{id}/status` with form `status`.
